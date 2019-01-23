@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import { ApolloProvider } from "react-apollo";
 import './reset.css';
 import './index.css';
-import Pictures from './components/Pictures';
+import { client } from './apollo';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Pictures />
-      </div>
+      <ApolloProvider client={client}>
+        <h1>Good luck!</h1>
+      </ApolloProvider>
     );
   }
 }
