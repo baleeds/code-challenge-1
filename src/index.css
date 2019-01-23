@@ -44,11 +44,7 @@ h1 {
   border: 2px solid #D8D8D8;
 }
 
-.picture:hover button {
-  display: inline;
-}
-
-.details {
+.picture-details {
   position: absolute;
   background: white;
   width: 100%;
@@ -56,12 +52,16 @@ h1 {
   display: flex;
 }
 
-.details button {
+.picture-details button {
   padding: 4px;
   display: none;
 }
 
-button svg {
+.picture:hover .picture-details button {
+  display: inline;
+}
+
+.picture-details button svg {
   width: 14px;
   height: 14px; 
   margin-top: 2px;
@@ -76,7 +76,7 @@ button svg {
   padding: 7px;
 }
 
-.thumbnail {
+.picture-thumbnail {
   height: 100%;
   width: 100%;
   background-size: cover;

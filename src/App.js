@@ -11,7 +11,10 @@ class App extends Component {
       <ApolloProvider client={client}>
         <div className="background">
           <div className="card">
-            <PicturesQR />      
+            <h1>Pictures</h1>
+            <div className="pictures-container">
+              <PicturesQR />
+            </div>
           </div>
         </div>
       </ApolloProvider>
