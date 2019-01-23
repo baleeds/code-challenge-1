@@ -1,40 +1,13 @@
-import React, { Component } from 'react';
+import React, { Fragment } from 'react';
+import Picture from './Picture';
 
-const DATABASE_PICTURES = [{
-  id: 1,
-  name: 'Meat',
-  url: '/img/1.jpg',
-}, {
-  id: 2,
-  name: 'Vegetables',
-  url: '/img/2.jpg',
-}, {
-  id: 3,
-  name: 'Bread',
-  url: '/img/3.jpg',
-}, {
-  id: 4,
-  name: 'Sweets',
-  url: '/img/4.jpg',
-}, {
-  id: 5,
-  name: 'Fruit',
-  url: '/img/5.jpg',
-}]
-
-class Pictures extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      currentPictures: [],
-    }
-  }
-  render() { 
-    return null;
-  }
-}
-
+const Pictures = ({ pictures }) => (
+  <Fragment>
+    <h1>Pictures</h1>
+    <div className="pictures-container">
+      {pictures.map(picture => <Picture key={picture.id} picture={picture} />)}
+    </div>
+  </Fragment>
+);
 
 export default Pictures;
-
