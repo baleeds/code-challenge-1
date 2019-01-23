@@ -4,7 +4,7 @@ import gql from 'graphql-tag';
 import Pictures from './Pictures';
 
 const query = gql`
-{
+query PicturesQuery {
   pictures {
     id
     name

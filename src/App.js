@@ -9,7 +9,11 @@ class App extends Component {
   render() {
     return (
       <ApolloProvider client={client}>
-        <PicturesQR />
+        <div className="background">
+          <div className="card">
+            <PicturesQR />      
+          </div>
+        </div>
       </ApolloProvider>
     );
   }
