@@ -3,12 +3,13 @@ import { ApolloProvider } from "react-apollo";
 import './reset.css';
 import './index.css';
 import { client } from './apollo';
+import PicturesQR from './components/PicturesQR';
 
 class App extends Component {
   render() {
     return (
       <ApolloProvider client={client}>
-        <h1>Good luck!</h1>
+        <PicturesQR />
       </ApolloProvider>
     );
   }
