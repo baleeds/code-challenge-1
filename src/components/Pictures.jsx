@@ -1,13 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Picture from './Picture';
 
-const Pictures = ({ pictures }) => (
-  <Fragment>
-    <h1>Pictures</h1>
-    <div className="pictures-container">
-      {pictures.map(picture => <Picture key={picture.id} picture={picture} />)}
-    </div>
-  </Fragment>
-);
+const Pictures = ({ pictures }) => pictures.map(picture => <Picture key={picture.id} picture={picture} />);
 
 export default Pictures;
