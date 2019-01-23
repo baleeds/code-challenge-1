@@ -3,15 +3,15 @@ import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import Pictures from './Pictures';
 
-const query = gql`
-query PicturesQuery {
-  pictures {
-    id
-    name
-    url
-    size
+export const query = gql`
+  query PicturesQuery {
+    pictures {
+      id
+      name
+      url
+      size
+    }
   }
-}
 `;
 
 const PicturesQR = () => (
