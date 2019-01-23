@@ -1,0 +1,1 @@
+https://xd.adobe.com/spec/b0b13b2a-116a-4864-5862-65f0037944b4-c680/screen/558c85fc-c3e5-4eec-8363-4b66df1b6efb/Web-1280-1/
