@@ -3,7 +3,6 @@ import { ApolloProvider } from "react-apollo";
 import './reset.css';
 import './index.css';
 import { client } from './apollo';
-import PicturesQR from './components/PicturesQR';
 
 class App extends Component {
   render() {
@@ -13,7 +12,7 @@ class App extends Component {
           <div className="card">
             <h1>Pictures</h1>
             <div className="pictures-container">
-              <PicturesQR />
+              {/* Start here */}
             </div>
           </div>
         </div>
