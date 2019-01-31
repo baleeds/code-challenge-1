@@ -28,7 +28,9 @@ h1 {
 }
 
 .pictures-container {
-  /* Hmmmm */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -7.5px;
 }
 
 .picture {
@@ -39,6 +41,7 @@ h1 {
   overflow: hidden;
   border-radius: 8px;
   border: 2px solid #D8D8D8;
+  flex: 0 1 134px;
 }
 
 .picture-details {
